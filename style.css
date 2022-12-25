@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif ;
+}
+
+.calculator{
+    margin: 200px auto 0;
+    width: 290px;
+    border: solid 3px rgb(206, 206, 206);
+    border-radius: 10px ;  
+}
+.screen {
+    text-align: right;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px rgb(206, 206, 206);
+    height: 80px;
+    font-size: 18px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+.buttons{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 51px 51px 51px 51px;
+    padding: 10px;
+    text-align: center;
+}
+.btnclcl{
+    padding: 18px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.40s ease-in;
+    border-radius: 10px;
+}
+.btnclcl:hover{
+    background-color: rgb(179, 112, 243) !important;
+}
+.btnclcl:active{
+    color: rgb(0, 217, 255) !important;
+}
+.clear, .egal {
+    grid-column: 1 / 3;
+    background-color: #b8bedd !important;
+}
+.addit{
+    grid-row: span 2;
+}
+.number{
+    background-color: #c2e3df;
+}
+.pink{
+    background-color: #f0d8f4;
+}
+
+i{
+    padding: 20px;
+    background-color: #b8bedd;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.black{
+    background-color: black;
+    color: aliceblue;
+}
